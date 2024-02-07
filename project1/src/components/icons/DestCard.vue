@@ -3,7 +3,7 @@
 <h1>{{ Destination.name }}</h1>
 <img :src="Destination.img" alt="">
 <h2>{{  clicked }}</h2>
-<button @clicked="increment">Click Me</button>
+<button @click="increment">Click Me</button>
     </div>
 </template>
 
