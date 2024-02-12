@@ -1,15 +1,18 @@
 <template>
   <div>
+    <Container>
     <DestCard 
     v-for = "destination in destinations" 
     :key = "destination.name"
     :Destination = "destination"
     />
+    </Container>
   </div>
 </template>
 
 <script setup>
-import DestCard from "@/components/icons/DestCard.vue";
+import Container from "@/components/Container.vue";
+import DestCard from "@/components/DestCard.vue";
 const destinations = [
         {
           name: "Cucumber",
