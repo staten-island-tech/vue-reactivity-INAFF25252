@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <Container>
-    <DestCard 
+  <div class = "Container"> 
+    <IngredientsSushi
     v-for = "destination in destinations" 
     :key = "destination.name"
     :Destination = "destination"
     />
-    </Container>
   </div>
 </template>
 
 <script setup>
-import Container from "@/components/Container.vue";
-import DestCard from "@/components/DestCard.vue";
+import IngredientsSushi from "@/components/IngredientsSushi.vue";
 const destinations = [
         {
           name: "Cucumber",
@@ -78,5 +75,13 @@ const destinations = [
 </script>
 
 <style scoped>
-
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    padding: 2rem
+}
 </style>

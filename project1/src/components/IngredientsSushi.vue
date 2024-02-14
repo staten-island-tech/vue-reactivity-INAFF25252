@@ -1,5 +1,6 @@
 <template>
     <div>
+
 <h1>{{ Destination.name }}</h1>
 <img :src="Destination.img" alt="">
 <h2>{{  clicked }}</h2>
@@ -20,8 +21,9 @@ function increment(){
 </script>
 
 <style scoped>
+
 img{
-    width: 250px;
-    height: 300px;
+    width: 15%;
+    height: auto;
 }
 </style>
