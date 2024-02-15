@@ -1,6 +1,7 @@
 <template>
-    <div>
-
+    <div class = "cart">
+    let shopCart = []
+    
     </div>
 </template>
 
@@ -9,5 +10,7 @@
 </script>
 
 <style scoped>
-
+.cart{
+    background-color: white;
+}
 </style>

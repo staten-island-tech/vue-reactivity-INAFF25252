@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class ="Container">
 
 <h1>{{ Destination.name }}</h1>
 <img :src="Destination.img" alt="">
@@ -23,7 +23,21 @@ function increment(){
 <style scoped>
 
 img{
-    width: 15%;
+    width: 20%;
     height: auto;
 }
+
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    padding: 2rem
+}
+
+button{
+    background-color: rgb(252, 218, 218);
+    }
 </style>

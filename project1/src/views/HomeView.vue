@@ -1,4 +1,5 @@
 <template>
+  <CartComp></CartComp>
   <div class = "Container"> 
     <IngredientsSushi
     v-for = "destination in destinations" 
@@ -9,6 +10,7 @@
 </template>
 
 <script setup>
+import CartComp from "@/components/CartComp.vue";
 import IngredientsSushi from "@/components/IngredientsSushi.vue";
 const destinations = [
         {
@@ -80,8 +82,8 @@ const destinations = [
     flex-wrap: wrap;
     align-items: flex-end;
     flex-direction: column;
-    width: 40%;
+    width:80%;
     justify-content: space-between;
-    padding: 2rem
+    padding: 1rem
 }
 </style>
