@@ -1,5 +1,5 @@
 <template>
-  <CartComp></CartComp>
+  <CartComp/>
   <div class = "Container"> 
     <IngredientsSushi
     v-for = "destination in destinations" 
@@ -86,4 +86,5 @@ const destinations = [
     justify-content: space-between;
     padding: 1rem
 }
+
 </style>
