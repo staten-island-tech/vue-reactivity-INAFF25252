@@ -6,5 +6,10 @@ html, body, *{
   background-color: lightsalmon;
 }
 
+h3, h2, h1, p{
+  background-color:transparent;
+  }
 
-
+  h2{
+    font-size: 1.1rem;
+  }

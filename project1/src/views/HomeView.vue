@@ -1,5 +1,5 @@
 <template>
-  <CartComp/>
+  <CartComp :cart="cart"/>
   <div class = "Container"> 
     <IngredientsSushi
     v-for = "destination in destinations" 
@@ -12,66 +12,60 @@
 <script setup>
 import CartComp from "@/components/CartComp.vue";
 import IngredientsSushi from "@/components/IngredientsSushi.vue";
+import { ref } from 'vue';
+
+const cart = ref([]);
+
 const destinations = [
         {
           name: "Cucumber",
-          freeOrNot: true,
-          price: 0.00,
+          price: 4.99,
           img: "/cucumber.jpg",
         },
         {
           name: "Avocado",
-          freeOrNot: false,
-          price: 2.00,
+          price: 4.99,
           img: "/avocado.jpg",
         },
         {
-          name: "Cream cheese",
-          freeOrNot: false,
-          price: 1.00,
-          img: "/cream-cheese.jpg",
+          name: "California",
+          price: 5.99,
+          img: "/california.jpg",
         },
         {
-          name: "Tobiko",
-          freeOrNot: false,
-          price: 1.00,
-          img: "/tobiko.jpg",
+          name: "Philidelphia",
+          price: 5.99,
+          img: "/phili.jpg",
         },
         {
-          name: "Kani",
-          freeOrNot: false,
-          price: 1.00,
+          name: "Spicy-kani",
+          price: 5.99,
           img: "/kani.jpg",
         },
         {
-          name: "Mango",
-          freeOrNot: false,
-          price: 1.50,
-          img: "/mango.jpg",
+          name: "Boston",
+          price: 5.50,
+          img: "/boston.jpg",
         },
         {
-          name: "Jalapeno",
-          freeOrNot: false,
-          price: 1.00,
-          img: "/jalapeno.jpg",
+          name: "Alaskan",
+          price: 5.99,
+          img: "/alaskan.jpg",
         },
         {
-          name: "Scallion",
-          freeOrNot: true,
-          price: 0.00,
-          img: "/scallion.jpg",
+          name: "Red Devil",
+          price: 15.99,
+          img: "/red.jpg",
         },
         {
-          name: "Soy Paper",
-          freeOrNot: false,
-          price: 1.00,
-          img: "/soy-paper.jpg",
+          name: "Dragon",
+          price: 15.99,
+          img: "/dragon.jpg",
         },
         {
-          name: "Eel",
-          freeOrNot: false,
-          price: 2.00,
-          img: "/eel.jpg",
+          name: "Eel-Avocado",
+          price: 5.99,
+          img: "/eel-avo.jpg",
         },
       ]
 </script>
@@ -80,8 +74,7 @@ const destinations = [
 .Container{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    flex-direction: column;
+    flex-direction: row;
     width:80%;
     justify-content: space-between;
     padding: 1rem

@@ -1,15 +1,18 @@
 <template>
-    <div class ="Container">
-
-<h1>{{ Destination.name }}</h1>
-<img :src="Destination.img" alt="">
-<h2>{{  clicked }}</h2>
-<button @click="increment">Click Me</button>
+    <div class="card">
+        <h2>{{ Destination.name}}</h2>
+        <h3>{{ clicked }}</h3>
+        <button @click="increment" >Add</button>
+        <img :src="Destination.img" alt="">
+         <h3>Price: {{ Destination.price}}</h3>
     </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+
+const cart = ref([])
+
 const props = defineProps({
     Destination: Object,
 });
@@ -17,24 +20,25 @@ const props = defineProps({
 const clicked = ref(0);
 function increment(){
     clicked.value++;
+    cart.value.push(props.Destination);
 }
+
 </script>
 
 <style scoped>
 
 img{
-    width: 20%;
-    height: auto;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
 }
 
-.Container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    flex-direction: column;
-    width: 40%;
-    justify-content: space-between;
-    padding: 2rem
+.card{
+    width:20%;
+    height:auto;
+    margin:.5rem;
+    padding:0px;
+    background-color: white;
 }
 
 button{
