@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Main</RouterLink>
+        <RouterLink to="/">Main</RouterLink>+
         <RouterLink to="/cart">Cart</RouterLink>
       </nav>
     </div>

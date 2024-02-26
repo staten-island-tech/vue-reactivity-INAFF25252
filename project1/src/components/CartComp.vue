@@ -6,7 +6,8 @@
             <p>No Items Yet</p>
         </div>
         <div v-else>
-            <div v-for="item in cart" :key="item.name" class="cartItems">
+            <div v-for="item in store" :key="item.name" class="cartItems">
+            <button @click="increment()">From B: {{ store.count }}</button>
             <p>{{ item.name }}</p>
             <p>{{ item.price }}</p>
             </div>
@@ -15,11 +16,14 @@
 </template>
 
 <script setup>
-
+import { store } from '../stores/store.js'
 const props = defineProps({
     cart: Array,
 });
 
+function increment(){
+    clicked.value++;
+}
 </script>
 
 <style scoped>

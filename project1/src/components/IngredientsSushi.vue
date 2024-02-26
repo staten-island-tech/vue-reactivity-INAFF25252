@@ -2,7 +2,7 @@
     <div class="card">
         <h2>{{ Destination.name}}</h2>
         <h3>{{ clicked }}</h3>
-        <button @click="increment" >Add</button>
+        <button @click="increment()" >Amount: {{ store.count }}</button>
         <img :src="Destination.img" alt="">
          <h3>Price: {{ Destination.price}}</h3>
     </div>
@@ -10,8 +10,9 @@
 
 <script setup>
 import { ref } from "vue";
+import { store } from '../stores/store.js'
 
-const cart = ref([])
+const cart = ref(0)
 
 const props = defineProps({
     Destination: Object,
@@ -20,7 +21,6 @@ const props = defineProps({
 const clicked = ref(0);
 function increment(){
     clicked.value++;
-    cart.value.push(props.Destination);
 }
 
 </script>
