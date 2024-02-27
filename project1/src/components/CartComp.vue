@@ -1,25 +1,23 @@
 <template>
     <div class = "shoppingCart">
         <h2>Shopping Cart</h2>
-        <div v-if ="cart.length === 0">
-            <h2>{{ cart.length }}</h2>
+        <div v-if ="store.cartItems.length === 0">
+            <h2>{{ store.cartItems.length }}</h2>
             <p>No Items Yet</p>
         </div>
         <div v-else>
-            <div v-for="item in store" :key="item.name" class="cartItems">
-            <button @click="increment()">From B: {{ store.count }}</button>
+            <div v-for="item in store.cartItems" :key="item.name" class="cartItems">
+            <div class="space">.</div>
             <p>{{ item.name }}</p>
             <p>{{ item.price }}</p>
             </div>
         </div>
+        <p> Total: {{ store.cartItems.length }}</p>
     </div>
 </template>
 
 <script setup>
 import { store } from '../stores/store.js'
-const props = defineProps({
-    cart: Array,
-});
 
 function increment(){
     clicked.value++;
@@ -34,6 +32,11 @@ function increment(){
     width:17rem;
     height: 100%;
     background-color: white;
+}
+
+.space{
+background-color:gray;
+color:gray;
 }
 
 h2, h1, p{
