@@ -12,6 +12,7 @@
             <p>{{ item.price }}</p>
             </div>
         </div>
+        <div class="space">.</div>
         <p> Total: {{ store.cartItems.length }}</p>
     </div>
 </template>

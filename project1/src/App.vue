@@ -5,10 +5,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-
     <div class="wrapper">
+    <h1>SUSHI ORDERING</h1>
       <nav>
-        <RouterLink to="/">Main</RouterLink>+
+        <RouterLink to="/">Main</RouterLink>
         <RouterLink to="/cart">Cart</RouterLink>
       </nav>
     </div>
@@ -71,12 +71,15 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
+    text-align: center;
     margin-left: -1rem;
     font-size: 1rem;
 
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+h1{
+  font-size:3rem;
 }
 </style>
