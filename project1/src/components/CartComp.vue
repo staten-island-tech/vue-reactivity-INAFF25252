@@ -13,15 +13,22 @@
             </div>
         </div>
         <div class="space">.</div>
-        <p> Total: {{ store.cartItems.length }}</p>
+        <p> Total Items: {{ store.cartItems.length }}</p>
+        <p v-bind=""> Total Amount: {{findTotal( store.price, store.cartItems.length )}}</p>
     </div>
 </template>
 
 <script setup>
 import { store } from '../stores/store.js'
 
-function increment(){
-    clicked.value++;
+function findTotal(array, size){
+    let sum = 0;
+
+    for(let i=0; i<size; i++)
+    {
+        sum += array[i];
+    }
+    return sum;
 }
 </script>
 
