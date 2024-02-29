@@ -37,7 +37,9 @@ img{
     width:20%;
     height:auto;
     margin:.5rem;
-    padding:0px;
+    padding-top: 1rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
     background-color: white;
 }
 

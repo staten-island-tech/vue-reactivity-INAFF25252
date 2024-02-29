@@ -38,7 +38,7 @@ const destinations = [
           img: "/phili.jpg",
         },
         {
-          name: "Spicy-kani",
+          name: "Spicy Kani",
           price: 5.99,
           img: "/kani.jpg",
         },
@@ -66,6 +66,56 @@ const destinations = [
           name: "Eel-Avocado",
           price: 5.99,
           img: "/eel-avo.jpg",
+        },
+        {
+          name: "Shrimp Tempura",
+          price: 6.99,
+          img: "/shrimp-temp.jpg",
+        },
+         {
+          name: "Chicken Tempura",
+          price: 6.99,
+          img: "/chicken-temp.jpg",
+        },
+        {
+          name: "Shrimp Avocado",
+          price: 5.99,
+          img: "/shrimp-avo.jpg",
+        },
+        {
+          name: "Spicy Salmon",
+          price: 5.99,
+          img: "/sp-salmon.jpg",
+        },
+        {
+          name: "Spicy Tuna",
+          price: 5.99,
+          img: "/sp-tuna.jpg",
+        },
+        {
+          name: "Tuna",
+          price: 5.99,
+          img: "/tuna.jpg",
+        },
+        {
+          name: "Salmon",
+          price: 5.99,
+          img: "/salmon.jpg",
+        },
+        {
+          name: "Kani",
+          price: 5.99,
+          img: "/reg-kani.jpg",
+        },
+        {
+          name: "Shrimp Mango",
+          price: 5.99,
+          img: "/mango.jpg",
+        },
+        {
+          name: "Yellowtail Scallion",
+          price: 5.99,
+          img: "/yellowtail.jpg",
         },
       ]
 </script>

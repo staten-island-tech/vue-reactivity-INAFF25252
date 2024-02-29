@@ -7,10 +7,6 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
     <h1>SUSHI ORDERING</h1>
-      <nav>
-        <RouterLink to="/">Main</RouterLink>
-        <RouterLink to="/cart">Cart</RouterLink>
-      </nav>
     </div>
   </header>
 
@@ -65,19 +61,10 @@ nav a:first-of-type {
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
-  }
-
-  nav {
     text-align: center;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
+
 }
 h1{
   font-size:3rem;

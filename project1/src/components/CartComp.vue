@@ -14,7 +14,7 @@
         </div>
         <div class="space">.</div>
         <p> Total Items: {{ store.cartItems.length }}</p>
-        <p v-bind=""> Total Amount: {{findTotal( store.price, store.cartItems.length )}}</p>
+        <p v-bind=""> Total Amount: ${{findTotal( store.price, store.cartItems.length )}}</p>
     </div>
 </template>
 
@@ -28,7 +28,7 @@ function findTotal(array, size){
     {
         sum += array[i];
     }
-    return sum;
+    return Math.ceil(sum * 100) / 100; //rounds to nearest hundreth 
 }
 </script>
 
