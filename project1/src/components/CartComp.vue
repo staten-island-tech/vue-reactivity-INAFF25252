@@ -40,6 +40,7 @@ function findTotal(array, size){
     width:17rem;
     height: 100%;
     background-color: white;
+    padding:.5rem;
 }
 
 .space{

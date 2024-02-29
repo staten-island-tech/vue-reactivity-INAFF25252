@@ -1,10 +1,10 @@
 <template>
     <div class="card">
         <h2>{{ Destination.name}}</h2>
-        <h3>{{ clicked }}</h3>
-        <button @click="addCart(Destination)" >Amount: {{ store.clicked }}</button>
         <img :src="Destination.img" alt="">
          <h3>Price: {{ Destination.price }}</h3>
+         <h3>{{ clicked }}</h3>
+         <button @click="addCart(Destination)" >Amount: {{ store.clicked }}</button>
     </div>
 </template>
 
@@ -41,6 +41,7 @@ img{
     padding-right: .5rem;
     padding-left: .5rem;
     background-color: white;
+    border-radius:5%;
 }
 
 button{
