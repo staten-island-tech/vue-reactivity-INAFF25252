@@ -41,7 +41,7 @@ img{
     padding-right: .5rem;
     padding-left: .5rem;
     background-color: white;
-    border-radius:5%;
+    border-radius:3%;
 }
 
 button{

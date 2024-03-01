@@ -28,7 +28,7 @@ function findTotal(array, size){
     {
         sum += array[i];
     }
-    return Math.ceil(sum * 100) / 100; //rounds to nearest hundreth 
+    return Math.ceil(sum * 100) / 100; //rounds to nearest hundreth
 }
 </script>
 
