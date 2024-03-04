@@ -3,8 +3,8 @@
         <h2>{{ Destination.name}}</h2>
         <img :src="Destination.img" alt="">
          <h3>Price: {{ Destination.price }}</h3>
-         <h3>{{ clicked }}</h3>
          <button @click="addCart(Destination)" >Amount: {{ store.clicked }}</button>
+         <h3>{{ clicked }}</h3>
     </div>
 </template>
 
