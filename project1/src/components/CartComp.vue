@@ -14,7 +14,7 @@
         </div>
         <div class="space">.</div>
         <p> Total Items: {{ store.cartItems.length }}</p>
-        <p v-bind=""> Total Amount: ${{findTotal( store.price, store.cartItems.length )}}</p>
+        <p> Total Amount: ${{findTotal( store.price, store.cartItems.length )}}</p>
     </div>
 </template>
 
